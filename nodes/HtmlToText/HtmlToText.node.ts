@@ -34,7 +34,7 @@ export class HtmlToText implements INodeType {
                 displayName: 'HTML',
                 name: 'html',
                 type: 'string',
-                placeholder: 'https://...',
+                placeholder: '<html>...</html>',
                 default: '',
                 required: true,
             },
