@@ -1,9 +1,13 @@
 {
 	"name": "n8n-nodes-html-to-text",
-	"version": "0.1.0",
-	"description": "n8n node to download Facebook video and reel using @xaviabot/fb-downloader package",
+	"version": "0.1.1",
+	"description": "n8n node to convert HTML content to plain text using html-to-text package",
 	"keywords": [
-		"n8n-community-node-package"
+		"n8n-community-node-package",
+		"html-to-text",
+		"html",
+		"text",
+		"convert"
 	],
 	"private": false,
 	"license": "MIT",
@@ -23,6 +27,7 @@
 		"dev": "tsc --watch",
 		"format": "prettier nodes  --write",
 		"lint": "eslint nodes  package.json",
+		"typecheck": "tsc --noEmit",
 		"lintfix": "eslint nodes  package.json --fix",
 		"prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes  package.json"
 	},
